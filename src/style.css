@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{   
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family:"Work Sans";
+    color:black;
+    background-color:white;
+    
+}
+koteret{
+    display: inline-block;
+    font-size:25px;
+}
+@keyframes bop {
+    from{
+        transform: scale(1)
+    }
+    to{
+        transform: scale(1.1)
+    }
+}
+.navbar{
+
+    background-color: white;     
+    color: white;   
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+
+}
+.navbarLeft{
+    text-align: left;
+    display: inline;
+
+}
+
+.navbarCenter{
+    text-align: center;
+    display: inline;
+    margin-top: 7px;
+
+    
+}
+
+.navbarRight{
+    text-align: right;
+    display: inline;
+    margin-top: 6px;
+}
+.cart{
+    display: flex;
+    position: relative;  
+    padding: 5px;
+    font-size: 30px; 
+    background-color: white; 
+    color: black;
+    border-radius: 10px;
+
+}
+.cartAmount{
+    top: 0px;
+    left: 25px;
+    padding: 2px;
+    position: absolute;
+    border-radius: 5px;
+    font-size: 13px;
+    background-color: black;
+    color:white;
+}
+
+.bi-facebook{
+    font-size: 25px;
+}
+
+
+.shop{
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(4,223px);
+
+}
+@media(max-width:1000px){
+    .shop{
+    grid-template-columns: repeat(2,223px);
+    }
+}
+
+@media(max-width:500px){
+    .shop{
+    grid-template-columns: repeat(1,223px);
+    }
+}
+
+.item{
+    border: 0px solid black;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 5px;
+}
+.price-quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 4px;
+
+}
+i{
+    cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 30px;
+        
+}
+.menu-item{
+    
+}
+a{
+    color: black;
+}
